@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+  .left-image {
+    width: auto;
+    float: inline-start;
+  }
+  
+  .logo-img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .header-icon {
+    max-width: 50px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 0 20px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    max-width: 50px;
+  }
+  
+  .profile-info {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    background-color: #eef5f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 50%;
+  }
+  
+  .info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-icon {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  .info-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50%;
+    font: 30px Montserrat, sans-serif;
+  }
+  
+  .info-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .info-label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .calendar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .calendar-img {
+    max-width: 100%;
+  }
+  
+  .calendar-content {
+    width: 100%;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .calendar-controls {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .calendar-days {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 16px;
+  }
+  
+  .calendar-dates div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .header, .main-content {
+      flex-direction: column;
+    }
+  
+    .column, .calendar {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .calendar {
+      margin-top: 20px;
+    }
+  }
+  
